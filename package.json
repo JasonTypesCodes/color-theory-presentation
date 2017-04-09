@@ -1,0 +1,27 @@
+{
+  "name": "color-theory-presentation",
+  "version": "1.0.0",
+  "description": "A brief introduction to color theory.",
+  "scripts": {
+    "build": "shx rm -rf ./dist && shx mkdir ./dist ./dist/build && shx cp ./presentation/index.html ./dist/build/index.html && webpack",
+    "serve": "webpack-dev-server --content-base presentation --inline --port 4100"
+  },
+  "license": "CC-BY-SA-4.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VoltiSubito/color-theory-presentation.git"
+  },
+  "author": "Jason Schindler",
+  "homepage": "https://github.com/VoltiSubito/color-theory-presentation",
+  "devDependencies": {
+    "css-loader": "0.28.0",
+    "file-loader": "0.11.1",
+    "reveal.js": "3.4.1",
+    "script-loader": "0.7.0",
+    "shx": "0.2.2",
+    "style-loader": "0.16.1",
+    "url-loader": "0.5.8",
+    "webpack": "2.3.3",
+    "webpack-dev-server": "2.4.2"
+  }
+}
