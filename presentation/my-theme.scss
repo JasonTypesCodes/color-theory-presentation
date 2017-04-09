@@ -1,0 +1,57 @@
+/**
+ * Theme for Reveal.js
+ *
+ * By Jason Schindler, http://jason.types.codes
+ */
+
+// Default mixins and settings -----------------
+@import "mixins";
+@import "settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../node_modules/reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #4d7e65;
+
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFontSize: 42px;
+$mainColor: #fff;
+
+$blockMargin: 20px;
+
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingColor: #FFEEA6;
+$headingLineHeight: 1.2;
+
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+$selectionColor: #fff;
+
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222;
+	}
+}
+
+// Theme template ------------------------------
+@import "theme";
+// ---------------------------------------------

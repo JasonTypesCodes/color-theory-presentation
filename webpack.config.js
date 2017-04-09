@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './presentation/main.js',
@@ -16,13 +17,30 @@ module.exports = {
         ]
       },
       {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: ['node_modules/reveal.js/css/theme/template']
+            }
+          }
+        ]
+      },
+      {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: [
           {
             loader: 'url-loader',
             options: {
-              limit: 10000,
-              mimetype: 'application/font-woff'
+              mimetype: 'application/font-woff',
+              limit: '10000'
             }
           }
         ]
@@ -30,19 +48,24 @@ module.exports = {
       {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: [
-          'file-loader'
+          {
+            loader: 'file-loader'
+          }
         ]
-      }
+      },
+      
     ]
-  }
+  },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin()
+  ]
 };
 
 // {
-//         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-//         loader: 'url-loader?limit=10000&mimetype=application/font-woff'
+//         test: /\.(jpe?g|png|gif|svg)$/i,
+//         loaders: [
+//           'file?hash=sha512&digest=hex&name=[hash].[ext]',
+//           'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+//         ]
 //       },
-//       {
-//         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-//         loader: 'file-loader'
-//       }
-//     ]
+

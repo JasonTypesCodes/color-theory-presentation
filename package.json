@@ -16,7 +16,10 @@
   "devDependencies": {
     "css-loader": "0.28.0",
     "file-loader": "0.11.1",
+    "font-awesome": "4.7.0",
+    "node-sass": "4.5.2",
     "reveal.js": "3.4.1",
+    "sass-loader": "6.0.3",
     "script-loader": "0.7.0",
     "shx": "0.2.2",
     "style-loader": "0.16.1",
