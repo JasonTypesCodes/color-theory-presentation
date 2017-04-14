@@ -18,6 +18,15 @@
 	text-align: left !important;
 }
 
+.nudge-right {
+	text-align: left !important;
+}
+
+.slim {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
 .hard-right {
 	text-align: right !important;
 }
@@ -59,5 +68,17 @@ ul.hard-left {
 		.color-descriptions {
 			font-size: 34px;
 		}
+	}
+}
+
+dl {
+	dt {
+		font-size: 50px !important;
+		color: #FFEEA6 !important;
+	}
+
+	dd {
+		font-size: 35px !important;
+		padding-bottom: 25px !important;
 	}
 }
