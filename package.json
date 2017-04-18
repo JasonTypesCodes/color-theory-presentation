@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A brief introduction to color theory.",
   "scripts": {
-    "build": "shx rm -rf ./dist && shx mkdir ./dist ./dist/build && shx cp ./presentation/index.html ./dist/build/index.html && webpack",
+    "build": "shx rm -rf ./dist && webpack",
     "serve": "webpack-dev-server --content-base presentation --inline --port 4100"
   },
   "license": "CC-BY-SA-4.0",
@@ -15,8 +15,10 @@
   "homepage": "https://github.com/VoltiSubito/color-theory-presentation",
   "devDependencies": {
     "css-loader": "0.28.0",
+    "extract-loader": "0.1.0",
     "file-loader": "0.11.1",
     "font-awesome": "4.7.0",
+    "html-loader": "0.4.5",
     "node-sass": "4.5.2",
     "reveal.js": "3.4.1",
     "sass-loader": "6.0.3",

@@ -82,3 +82,13 @@ dl {
 		padding-bottom: 25px !important;
 	}
 }
+
+img.boring {
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+img.standard {
+	max-height: 350px;
+}

@@ -53,19 +53,37 @@ module.exports = {
           }
         ]
       },
-      
+      { 
+        test: /\.png$/, 
+        use: [ 
+          {
+            loader: 'file-loader'
+          }
+        ]
+      },
+      {
+        test: /index\.html$/,
+        use: [ 
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          },
+          {
+            loader: 'extract-loader'
+          },
+          {
+            loader: 'html-loader',
+            options: {
+              attrs: ['img:src']
+            }
+          }
+        ]
+      }
     ]
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin()
   ]
 };
-
-// {
-//         test: /\.(jpe?g|png|gif|svg)$/i,
-//         loaders: [
-//           'file?hash=sha512&digest=hex&name=[hash].[ext]',
-//           'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-//         ]
-//       },
-
