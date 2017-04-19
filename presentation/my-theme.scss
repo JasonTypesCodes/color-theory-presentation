@@ -15,17 +15,17 @@
 
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #00813F;
+$backgroundColor: #006934;
 
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$mainFontSize: 42px;
+$mainFont: 'TypoPRO Montserrat', Helvetica, sans-serif;
+$mainFontSize: 36px;
 $mainColor: #fff;
 
 $blockMargin: 20px;
 
 $headingMargin: 0 0 $blockMargin 0;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingColor: #FFEEA6;
+$headingFont: 'TypoPRO Junction', Helvetica, sans-serif;
+$headingColor: #E9C153;
 $headingLineHeight: 1.2;
 
 $headingTextShadow: none;
@@ -39,11 +39,11 @@ $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 
 
-$linkColor: #42affa;
+$linkColor: #FFDC7A;
 $linkColorHover: lighten( $linkColor, 15% );
 
 $selectionBackgroundColor: lighten( $linkColor, 25% );
-$selectionColor: #fff;
+$selectionColor: #A856B1;
 
 
 section.has-light-background {

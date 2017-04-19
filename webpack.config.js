@@ -76,7 +76,7 @@ module.exports = {
           {
             loader: 'html-loader',
             options: {
-              attrs: ['img:src']
+              attrs: ['img:src', 'section:data-background']
             }
           }
         ]

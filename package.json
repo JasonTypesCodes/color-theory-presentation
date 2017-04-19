@@ -14,6 +14,8 @@
   "author": "Jason Schindler",
   "homepage": "https://github.com/VoltiSubito/color-theory-presentation",
   "devDependencies": {
+    "@typopro/web-montserrat": "3.4.9",
+    "@typopro/web-junction": "3.4.9",
     "css-loader": "0.28.0",
     "extract-loader": "0.1.0",
     "file-loader": "0.11.1",
